@@ -69,5 +69,5 @@ function convert() {
     }
     alert("the resurt is: " + formatamount);
     console.log(formatamount)
+    result.innerHTML =`result is ${formatamount}`
 }
-result.innerHTML =`result is ${formatamount}`

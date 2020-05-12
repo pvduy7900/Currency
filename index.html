@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- content la khung ben ngoai -->
+    <div class="convert-wrapper">
+        <!-- h1 cung lam 1 cai css -->
+        <h1>Currency converter</h1>
+        <!-- toi day thi chinh may cai thanh phan ben trong -->
+        <div class="content">
+            <!-- khung mo dau -->
+            <div>
+                <p style="color:white;font-size: 30px;">Amount</p>
+                <input type="number" id="amountInput" />
+            </div>
+            <!-- khung from -->
+            <div class="Currency-section">
+                <p style="color:white;font-size: 30px;">From</p>
+                <select id="fromList">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div >
+            <!-- khung to -->
+            <div class="Currency-section">
+                <p style="color:white;font-size: 30px;">To</p>
+                <select id="toList">
+                    <option value="USD">USD</option>
+                    <option value="VND">VND</option>
+                    <option value="EUR">EUR</option>
+                </select>
+            </div>
+            <!-- khung button -->
+            <div class="Currency-section">
+                <button id="convertButton" onclick="convert()">convert</button>
+                <div id="resultArea">
+                    result will be here
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="main.js"></script>
+
+</body>
+
+</html>
